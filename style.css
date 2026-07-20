@@ -52,6 +52,18 @@ main{
     gap:20px;
 }
 
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 3px 12px rgba(0,0,0,0.1);
+    transition:.3s;
+    }
+
+.card:hover{
+    transform:translateY(-5px);
+}
 
 /* ==========================
    ÁREA DE RECOMENDAÇÃO
