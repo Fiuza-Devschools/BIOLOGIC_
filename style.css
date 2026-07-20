@@ -18,7 +18,20 @@ body{
    CABEÇALHO
 ========================== */
 
+header{
+    background:#1f8f4d;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
 
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+}
 
 /* ==========================
    CONTEÚDO PRINCIPAL
