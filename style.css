@@ -30,7 +30,8 @@ header h1{
 }
 
 header p{
-    margin-top:10px;
+    font-size:1.2rem;
+    margin-bottom:20px;
 }
 
 /* ==========================
@@ -79,9 +80,40 @@ main{
    ÁREA DE RECOMENDAÇÃO
 ========================== */
 
+.alerta{
+    margin-top:40px;
+    background:#256D2B;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 3px 12px rgba(0,0,0,.1);
+}
 
-
+.alerta p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
 /* ==========================
    BOTÕES
 ========================== */
 
+.botoes{
+    display:flex;
+    gap:15px;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    padding:12px 20px;
+    border-radius:10px;
+    font-size:1rem;
+}
+
+.btn-verde{
+    background:#194e1e;
+    color:white;
+}
+
+.btn-branco{
+    background:#d4d4d4;
+}
