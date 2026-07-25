@@ -10,7 +10,7 @@
 }
 
 body{
-    background:#eef5ee;
+    background:rgb(27, 27, 27);
     min-height:100vh;
 }
 
@@ -19,8 +19,8 @@ body{
 ========================== */
 
 header{
-    background:#1f8f4d;
-    color:white;
+    background:#256D2B;
+    color:black;
     text-align:center;
     padding:25px;
 }
@@ -53,18 +53,28 @@ main{
 }
 
 .card{
-    background:white;
+    color: #256D2B;
+    background:#252525;
     border-radius:15px;
     padding:25px;
     text-align:center;
-    box-shadow:0 3px 12px rgba(0,0,0,0.1);
+    box-shadow:0 0 15px rgba(255,255,255,.03);
     transition:.3s;
     }
 
 .card:hover{
     transform:translateY(-5px);
 }
+.card h3{
+    color:#256D2B;
+    margin-bottom:15px;
+}
 
+.card span{
+    color:white;
+    font-size:2rem;
+    font-weight:bold;
+}
 /* ==========================
    ÁREA DE RECOMENDAÇÃO
 ========================== */
@@ -74,3 +84,4 @@ main{
 /* ==========================
    BOTÕES
 ========================== */
+
