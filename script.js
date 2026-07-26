@@ -32,3 +32,12 @@ function atualizarCards(){
     sensores.composteira + "°C";
 }
 atualizarCards();
+
+
+function atualizarRecomendacao(){
+let mensagem = document.getElementById("mensagem");
+mensagem.innerHTML =
+"Teste do sistema.";
+}
+
+atualizarRecomendacao();

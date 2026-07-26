@@ -72,7 +72,7 @@ main{
 }
 
 .card span{
-    color:white;
+    color:rgba(255, 255, 255, 0.849);
     font-size:2rem;
     font-weight:bold;
 }
