@@ -1,11 +1,11 @@
 let sensores = {
-    temperatura:34,
+    temperatura:26,
     umidadeAr:68,
-    umidadeSolo:35,
-    luminosidade:"Baixa",
+    umidadeSolo:60,
+    luminosidade:"Alta",
     qualidadeAgua:"Adequada",
     nivelAgua:"Normal",
-    composteira:"Pronta"
+    composteira:"Em decomposição"
 };
 
 function atualizarCards(){
@@ -36,8 +36,63 @@ atualizarCards();
 
 function atualizarRecomendacao(){
 let mensagem = document.getElementById("mensagem");
-mensagem.innerHTML =
-"Teste do sistema.";
+
+// Solo seco
+    if(sensores.umidadeSolo < 35){
+
+        mensagem.innerHTML =
+        "🌱 Solo seco. Deseja irrigar agora?";
+
+    }
+
+    // Temperatura alta
+    else if(sensores.temperatura > 32){
+
+        mensagem.innerHTML =
+        "🌡️ Temperatura elevada. Deseja ligar a ventoinha?";
+
+    }
+
+    // Pouca luminosidade
+    else if(sensores.luminosidade == "Baixa"){
+
+        mensagem.innerHTML =
+        "☀️ Pouca luz. Deseja ligar o LED?";
+
+    }
+
+    // Qualidade da água
+    else if(sensores.qualidadeAgua == "Ruim"){
+
+        mensagem.innerHTML =
+        "🚰 Qualidade da água inadequada. Verifique o reservatório.";
+
+    }
+
+    // Nível da água
+    else if(sensores.nivelAgua == "Baixo"){
+
+        mensagem.innerHTML =
+        "💧 Nível da água baixo. Reabasteça o reservatório.";
+
+    }
+
+    // Composteira
+    else if(sensores.composteira == "Pronta"){
+
+        mensagem.innerHTML =
+        "♻️ O adubo está pronto. Deseja ver como aplicá-lo?";
+
+    }
+
+    // Nenhum problema encontrado
+    else{
+
+        mensagem.innerHTML =
+        "🌱 Nenhuma recomendação no momento.";
+
+    }
+
 }
 
 atualizarRecomendacao();
