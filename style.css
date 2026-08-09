@@ -90,10 +90,9 @@ header p{
 ========================== */
 
 main{
-    width:90%;
-    margin:auto;
-    margin-left:calc(230px + 5%);
-    padding:30px 0;
+    margin-left:230px;
+    width:calc(100% - 230px);
+    padding:30px 5%;
 }
 
 /* ==========================
