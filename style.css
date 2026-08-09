@@ -15,6 +15,56 @@ body{
 }
 
 /* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:230px;
+    height:100vh;
+
+    background:#202020;
+    padding:25px 15px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar h2{
+    color:#256D2B;
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    padding:14px;
+    border-radius:10px;
+
+    transition:.2s;
+}
+
+.sidebar a:hover{
+    background:#256D2B;
+}
+
+.sidebar-bottom{
+    margin-top:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+/* ==========================
    CABEÇALHO
 ========================== */
 
@@ -23,6 +73,7 @@ header{
     color:black;
     text-align:center;
     padding:25px;
+    margin-left:230px;
 }
 
 header h1{
@@ -39,9 +90,10 @@ header p{
 ========================== */
 
 main{
-    width: 90%;
-    margin: auto;
-    padding: 30px 0;
+    width:90%;
+    margin:auto;
+    margin-left:calc(230px + 5%);
+    padding:30px 0;
 }
 
 /* ==========================
