@@ -1,0 +1,156 @@
+/* ==========================
+   ESTILOS GERAIS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:rgb(27, 27, 27);
+    min-height:100vh;
+}
+
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:230px;
+    height:100vh;
+
+    background:#202020;
+    padding:25px 15px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar h2{
+    color:#256D2B;
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    padding:14px;
+    border-radius:10px;
+
+    transition:.2s;
+}
+
+.sidebar a:hover{
+    background:#256D2B;
+}
+
+.sidebar-bottom{
+    margin-top:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+/* ==========================
+   CONTEÚDO PRINCIPAL
+========================== */
+
+main{
+    margin-left:230px;
+    width:calc(100% - 230px);
+    min-height:100vh;
+    padding:30px;
+}
+h1{
+    color:#256D2B;
+    margin-bottom:20px;
+}
+/* ==========================
+   MINHA HORTA
+========================== */
+
+.selecao-planta{
+    margin-top:30px;
+    margin-bottom:25px;
+
+    background:#252525;
+    padding:25px;
+    border-radius:15px;
+}
+
+.selecao-planta h2{
+    color:#256D2B;
+    margin-bottom:15px;
+}
+
+.selecao-planta select{
+    width:100%;
+    max-width:400px;
+
+    padding:12px 15px;
+
+    background:#1b1b1b;
+    color:white;
+
+    border:1px solid #256D2B;
+    border-radius:10px;
+
+    font-size:1rem;
+    cursor:pointer;
+}
+
+
+.informacoes-planta{
+    background:#252525;
+    border-radius:15px;
+    padding:30px;
+
+    color:white;
+}
+
+.informacoes-planta h2{
+    color:#256D2B;
+    font-size:2rem;
+    margin-bottom:5px;
+}
+
+.nomeCientifico{
+    font-style:italic;
+}
+
+.informacoes-planta > p{
+    margin:10px 0;
+}
+
+.descricao{
+    margin-top:25px;
+    padding-top:20px;
+
+    border-top:1px solid #3a3a3a;
+}
+
+.descricao h3{
+    color:#256D2B;
+    margin-bottom:10px;
+}
+
+.descricao p{
+    line-height:1.6;
+    color:#ddd;
+}
