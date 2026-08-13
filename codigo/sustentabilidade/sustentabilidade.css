@@ -12,13 +12,13 @@
 body{
     background:rgb(27, 27, 27);
     min-height:100vh;
+    color:white;
 }
 
 
 /* ==========================
    SIDEBAR
 ========================== */
-
 
 .sidebar{
     position:fixed;
@@ -67,6 +67,7 @@ body{
     gap:10px;
 }
 
+
 /* ==========================
    CONTEÚDO PRINCIPAL
 ========================== */
@@ -75,91 +76,74 @@ main{
     margin-left:230px;
     width:calc(100% - 230px);
     min-height:100vh;
-    padding:30px;
+
+    padding:40px;
 }
-h1{
-    color:#256D2B;
-    margin-bottom:20px;
-}
+
+
 /* ==========================
-   MINHA HORTA
+   TÍTULO
 ========================== */
 
-.selecao-planta{
-    margin-top:30px;
-    margin-bottom:25px;
-
-    background:#252525;
-    padding:25px;
-    border-radius:15px;
+.titulo{
+    margin-bottom:35px;
 }
 
-.selecao-planta h2{
+.titulo h1{
     color:#256D2B;
-    margin-bottom:15px;
-}
-
-.selecao-planta select{
-    width:100%;
-    max-width:400px;
-
-    padding:12px 15px;
-
-    background:#1b1b1b;
-    color:white;
-
-    border:1px solid #256D2B;
-    border-radius:10px;
-
-    font-size:1rem;
-    cursor:pointer;
-}
-
-#imagemPlanta{
-    width:100%;
-    max-width:400px;
-    height:250px;
-    object-fit:cover;
-    border-radius:15px;
-    margin:20px 0;
-    display:block;
-}
-
-.informacoes-planta{
-    background:#252525;
-    border-radius:15px;
-    padding:30px;
-
-    color:white;
-}
-
-.informacoes-planta h2{
-    color:#256D2B;
-    font-size:2rem;
-    margin-bottom:5px;
-}
-
-.nomeCientifico{
-    font-style:italic;
-}
-
-.informacoes-planta > p{
-    margin:10px 0;
-}
-
-.descricao{
-    margin-top:25px;
-    padding-top:20px;
-
-    border-top:1px solid #3a3a3a;
-}
-
-.descricao h3{
-    color:#256D2B;
+    font-size:2.5rem;
     margin-bottom:10px;
 }
 
-.descricao p{
-    line-height:1.6;
+.titulo p{
+    color:#ccc;
+    font-size:1.1rem;
+}
+
+
+/* ==========================
+   CARDS
+========================== */
+
+.conteudo{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+    gap:25px;
+}
+
+.card-sustentabilidade{
+    background:#252525;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 0 15px rgba(255,255,255,.03);
+
+    transition:.3s;
+}
+
+.card-sustentabilidade:hover{
+    transform:translateY(-5px);
+}
+
+
+.card-sustentabilidade h2{
+    color:#256D2B;
+
+    font-size:1.4rem;
+
+    margin-bottom:15px;
+}
+
+
+.card-sustentabilidade p{
     color:#ddd;
+
+    line-height:1.6;
+
+    font-size:1rem;
 }
