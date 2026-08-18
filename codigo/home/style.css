@@ -112,6 +112,7 @@ main{
     text-align:center;
     box-shadow:0 0 15px rgba(255,255,255,.03);
     transition:.3s;
+    border-left: 5px solid #256D2B;
     }
 
 .card:hover{
