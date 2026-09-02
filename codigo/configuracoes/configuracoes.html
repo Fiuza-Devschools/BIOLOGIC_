@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <title>Configurações - BIOLOGIC</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="configuracoes.css">
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>🌱 BIOLOGIC</h2>
+
+        <nav>
+            <a href="../home/index.html">🏠 Dashboard</a>
+            <a href="../minha_horta/horta.html">🌱 Minha Horta</a>
+            <a href="../sustentabilidade/sustentabilidade.html">♻️ Sustentabilidade</a>
+            <a href="#">🌿 Curiosidades</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="../sobre/sobre.html">ℹ️ Sobre</a>
+            <a href="../configuracoes/configuracoes.html">⚙️ Configurações</a>
+        </div>
+
+    </aside>
+
+
+    <main>
+
+        <header class="titulo">
+
+            <h1>⚙️ Configurações</h1>
+
+            <p>
+                Personalize o funcionamento e a aparência do BIOLOGIC.
+            </p>
+
+        </header>
+
+
+        <!-- APARÊNCIA -->
+
+        <section class="configuracao">
+
+            <div class="config-texto">
+
+                <h2>🎨 Aparência</h2>
+
+                <p>
+                    Escolha como o BIOLOGIC será exibido.
+                </p>
+
+            </div>
+
+            <select id="tema">
+
+                <option value="escuro">
+                    🌙 Modo escuro
+                </option>
+
+                <option value="claro">
+                    ☀️ Modo claro
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- NOTIFICAÇÕES -->
+
+        <section class="configuracao">
+
+            <div class="config-texto">
+
+                <h2>🔔 Recomendações</h2>
+
+                <p>
+                    Permitir que o sistema apresente recomendações
+                    relacionadas às condições da horta.
+                </p>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    id="notificacoes"
+                    checked
+                >
+
+                <span class="slider"></span>
+
+            </label>
+
+        </section>
+
+
+        <!-- UNIDADE -->
+
+        <section class="configuracao">
+
+            <div class="config-texto">
+
+                <h2>🌡️ Unidade de temperatura</h2>
+
+                <p>
+                    Escolha a unidade utilizada para exibir a temperatura.
+                </p>
+
+            </div>
+
+            <select id="unidade">
+
+                <option value="celsius">
+                    Celsius (°C)
+                </option>
+
+                <option value="fahrenheit">
+                    Fahrenheit (°F)
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- ATUALIZAÇÃO -->
+
+        <section class="configuracao">
+
+            <div class="config-texto">
+
+                <h2>🔄 Atualização dos dados</h2>
+
+                <p>
+                    Defina com que frequência os dados do sistema
+                    deverão ser atualizados.
+                </p>
+
+            </div>
+
+            <select id="atualizacao">
+
+                <option value="5">
+                    A cada 5 segundos
+                </option>
+
+                <option value="10">
+                    A cada 10 segundos
+                </option>
+
+                <option value="30">
+                    A cada 30 segundos
+                </option>
+
+                <option value="60">
+                    A cada 1 minuto
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- RESTAURAR -->
+
+        <section class="configuracao restaurar">
+
+            <div class="config-texto">
+
+                <h2>🧹 Restaurar configurações</h2>
+
+                <p>
+                    Voltar todas as configurações para os valores padrão.
+                </p>
+
+            </div>
+
+            <button id="restaurar">
+                Restaurar
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="configuracoes.js"></script>
+
+</body>
+
+</html>

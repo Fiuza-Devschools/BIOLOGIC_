@@ -18,23 +18,22 @@ function atualizarCards(){
     sensores.temperatura + "°C";
 
     document.getElementById("umidadeAr").innerHTML =
-    sensores.umidadeAr + "°C";
+    sensores.umidadeAr + "%";
 
     document.getElementById("umidadeSolo").innerHTML =
-    sensores.umidadeSolo + "°C";
+    sensores.umidadeSolo + "%";
 
     document.getElementById("luminosidade").innerHTML =
-    sensores.luminosidade + "°C";
+    sensores.luminosidade;
 
     document.getElementById("qualidadeAgua").innerHTML =
-    sensores.qualidadeAgua + "°C";
+    sensores.qualidadeAgua;
 
     document.getElementById("nivelAgua").innerHTML =
-    sensores.nivelAgua + "°C";
+    sensores.nivelAgua;
 
     document.getElementById("composteira").innerHTML =
-    sensores.composteira + "°C";
-}
+    sensores.composteira;
 
 
 

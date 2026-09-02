@@ -1,0 +1,335 @@
+/* ==========================
+   ESTILOS GERAIS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:rgb(27, 27, 27);
+    min-height:100vh;
+    color:white;
+}
+
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:230px;
+    height:100vh;
+
+    background:#202020;
+
+    padding:25px 15px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar h2{
+    color:#256D2B;
+    text-align:center;
+
+    margin-bottom:35px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    transition:.2s;
+}
+
+.sidebar a:hover{
+    background:#256D2B;
+}
+
+.sidebar-bottom{
+    margin-top:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+
+/* ==========================
+   CONTEÚDO
+========================== */
+
+main{
+    margin-left:230px;
+
+    width:calc(100% - 230px);
+
+    min-height:100vh;
+
+    padding:40px;
+}
+
+
+/* ==========================
+   TÍTULO
+========================== */
+
+.titulo{
+    margin-bottom:35px;
+}
+
+.titulo h1{
+    color:#256D2B;
+
+    font-size:2.5rem;
+
+    margin-bottom:10px;
+}
+
+.titulo p{
+    color:#ccc;
+
+    font-size:1.1rem;
+}
+
+
+/* ==========================
+   CONFIGURAÇÕES
+========================== */
+
+.configuracao{
+
+    background:#252525;
+
+    border-radius:15px;
+
+    padding:25px 30px;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:30px;
+
+    box-shadow:0 0 15px rgba(255,255,255,.03);
+}
+
+
+.config-texto{
+    flex:1;
+}
+
+
+.config-texto h2{
+
+    color:#256D2B;
+
+    font-size:1.3rem;
+
+    margin-bottom:8px;
+}
+
+
+.config-texto p{
+
+    color:#ccc;
+
+    line-height:1.5;
+}
+
+
+/* ==========================
+   SELECT
+========================== */
+
+select{
+
+    min-width:180px;
+
+    padding:12px 15px;
+
+    background:#1b1b1b;
+
+    color:white;
+
+    border:1px solid #256D2B;
+
+    border-radius:10px;
+
+    font-size:1rem;
+
+    cursor:pointer;
+}
+
+
+/* ==========================
+   BOTÃO
+========================== */
+
+button{
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    background:#256D2B;
+
+    color:white;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+button:hover{
+
+    background:#194e1e;
+
+}
+
+
+/* ==========================
+   SWITCH
+========================== */
+
+.switch{
+
+    position:relative;
+
+    width:55px;
+
+    height:30px;
+
+    flex-shrink:0;
+}
+
+
+.switch input{
+
+    opacity:0;
+
+    width:0;
+
+    height:0;
+}
+
+
+.slider{
+
+    position:absolute;
+
+    cursor:pointer;
+
+    inset:0;
+
+    background:#444;
+
+    border-radius:30px;
+
+    transition:.3s;
+}
+
+
+.slider:before{
+
+    content:"";
+
+    position:absolute;
+
+    width:22px;
+
+    height:22px;
+
+    left:4px;
+
+    bottom:4px;
+
+    background:white;
+
+    border-radius:50%;
+
+    transition:.3s;
+}
+
+
+.switch input:checked + .slider{
+
+    background:#256D2B;
+}
+
+
+.switch input:checked + .slider:before{
+
+    transform:translateX(25px);
+}
+
+
+/* ==========================
+   RESTAURAR
+========================== */
+
+.restaurar{
+
+    border-left:4px solid #256D2B;
+}
+
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media(max-width:700px){
+
+    .sidebar{
+
+        width:190px;
+    }
+
+    main{
+
+        margin-left:190px;
+
+        width:calc(100% - 190px);
+
+        padding:25px;
+    }
+
+    .configuracao{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    select{
+
+        width:100%;
+    }
+
+}
