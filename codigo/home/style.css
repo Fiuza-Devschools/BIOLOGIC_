@@ -85,6 +85,31 @@ header p{
     margin-bottom:20px;
 }
 
+/* Botão de conexão com o Arduino */
+button[onclick="conectarArduino()"] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background: #252525;
+    color: #dcdcdc;
+
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+
+    padding: 8px 14px;
+
+    font-size: 13px;
+    cursor: pointer;
+
+    opacity: 0.85;
+    transition: 0.2s;
+}
+
+button[onclick="conectarArduino()"]:hover {
+    background: #333333;
+    opacity: 1;
+}
 /* ==========================
    CONTEÚDO PRINCIPAL
 ========================== */
