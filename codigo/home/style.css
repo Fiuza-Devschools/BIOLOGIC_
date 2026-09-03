@@ -194,3 +194,132 @@ button{
 .btn-branco{
     background:#d4d4d4;
 }
+
+/* ==========================================
+   POP-UP DE RECOMENDAÇÃO
+   ========================================== */
+
+.popup-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+
+    padding: 20px;
+}
+
+
+.popup-overlay.ativo {
+
+    display: flex;
+
+}
+
+
+.popup {
+
+    position: relative;
+
+    background: rgb(20, 20, 20);
+
+    color: #dcdcdc;
+    width: 100%;
+
+    max-width: 550px;
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 40px #194e1e;
+
+}
+
+
+.popup h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+}
+
+
+.popup h3 {
+
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.popup p {
+
+    line-height: 1.6;
+
+}
+
+
+.popup ol {
+
+    padding-left: 25px;
+
+    line-height: 1.8;
+
+}
+
+
+.popup-fechar {
+
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+}
+
+
+.popup-acoes {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.popup-acoes button {
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
